@@ -4,12 +4,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My profile</title>
+    <title>Wander Martins | Perfil Profissional</title>
+    <meta name="description" content="Perfil profissional de Wander Martins, Doutor em Agricultura com foco em Geoprocessamento, Sensoriamento Remoto, análises de dados com QGIS e Python.">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg">
+
     <style>
+        /* Suavizar o movimento de subida */
+        html { scroll-behavior: smooth; }
+
         /* Configurações gerais */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -67,6 +73,7 @@
             border: 1px solid #333;
             transition: 0.3s;
             cursor: default;
+            opacity: 0;  /* Inicia invisível para a animação */
             animation: fadeInUp 0.6s ease forwards;
         }
 
@@ -441,7 +448,7 @@
                     btnVoltarAoTopo.classList.add('active');
                 } else {
                     // Caso contrário, remove a classe
-                    btnVoltarAoTopo.classList.remove('active')
+                    btnVoltarAoTopo.classList.remove('active');
                 }
             });
 
